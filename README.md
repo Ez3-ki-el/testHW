@@ -1,6 +1,6 @@
 # Projet de Gestion des Offres - SQLite & API Pôle Emploi
 
-Ce projet est une application qui utilise une base de données SQLite pour stocker et gérer des informations relatives aux offres d'emploi. Actuellement, les données sont insérées ou mises à jour à partir d'un fichier JSON, et il reste à intégrer les appels API vers Pôle Emploi, en particulier la gestion de l'authentification.
+Ce projet est une application qui utilise une base de données SQLite pour stocker et gérer des informations relatives aux offres d'emploi. Actuellement, les données sont insérées ou mises à jour à partir d'un fichier JSON, et il reste à intégrer les appels API vers Pôle Emploi, en particulier la gestion de l'authentification ainsi que le rapport des statistiques de récupération affichant le type de contrat, l'entreprise et le pays.
 
 ## Fonctionnalités actuelles
 
@@ -33,6 +33,13 @@ Ce projet est une application qui utilise une base de données SQLite pour stock
 
 Il reste à implémenter les appels API vers Pôle Emploi pour récupérer dynamiquement les offres d'emploi. La partie **authentification API** est actuellement en attente de mise en œuvre. Cela inclut l'obtention des jetons d'accès nécessaires.
 Il faut également étoffer le modèle et les tables bdd en utilisant l'exemple de payload de pole-emploi et rajouter des contrôles de surface.
+
+### Création du rapport des statistiques de récupération 
+
+Afficher un rapport (en console ou en fichier) des statistiques de récupération affichant :
+le type de contrat ;
+l’entreprise ;
+le pays.
 
 ## Instructions pour démarrer
 
