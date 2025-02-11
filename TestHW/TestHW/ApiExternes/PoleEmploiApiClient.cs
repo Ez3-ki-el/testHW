@@ -35,9 +35,7 @@ namespace TestHW.ApiExternes
             var builder = new UriBuilder(URL_API_SEARCH_OFFER);
             NameValueCollection query = HttpUtility.ParseQueryString(builder.Query);
 
-
             query.Add("commune", String.Join(",", villesInsee));
-
 
             builder.Query = query.ToString();
             var urlAvecQuery = builder.ToString();

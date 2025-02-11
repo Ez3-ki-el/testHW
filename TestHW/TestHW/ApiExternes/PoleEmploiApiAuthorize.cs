@@ -30,6 +30,10 @@ namespace TestHW.ApiExternes
 
         public async Task<string> Connect()
         {
+            // Todo faire marcher 
+            // https://francetravail.io/compte/applications/10773
+            // https://francetravail.io/produits-partages/documentation/open-id-connect/authentifier-utilisateur
+
             string url = $"{URL_API_AUTHORIZE_INDIVIDU}?realm=individu&response_type=code&client_id={ID_CLIENT}";
             string response = await _client.GetStringAsync(url);
             return response;
